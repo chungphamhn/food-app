@@ -1,8 +1,10 @@
+import Header from "./Layout/Header";
+
 
 function App() {
   return (
-    <div className="App">
-      
+    <div>
+      <Header />
     </div>
   );
 }
