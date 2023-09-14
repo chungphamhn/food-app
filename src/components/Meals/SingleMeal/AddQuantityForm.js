@@ -1,9 +1,20 @@
+import Input from '../../UI/Input';
 import style from './AddQuantityForm.module.css';
 
 const AddQuantityForm = (props) => {
-    return(
-        <form>
-            <input />
+    return (
+        <form className={style.form}>
+            <Input
+                label="Amount"
+                input={{
+                    id: 'amount',
+                    type: 'number',
+                    min: '1',
+                    max: '5',
+                    step: '1',
+                    defaultValue: '1'
+                }}
+            />
             <button>+ Add</button>
         </form>
     );

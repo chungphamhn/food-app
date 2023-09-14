@@ -7,12 +7,10 @@ const MealItem = (props) => {
     const price = `$${props.meal.price.toFixed(2)}`;
     return (
         <li className={style.meal}>
-            <div className={style.test}>
-                <div className={style.price}>
-                    <div className={style.test2}>{props.meal.name}</div>
-                    <div>{price}</div>
-                </div>
+            <div>
+                <h3>{props.meal.name}</h3>
                 <div className={style.description}>{props.meal.description}</div>
+                <div className={style.price}>{price}</div>
             </div>
             <div><AddQuantityForm /></div>
         </li>
